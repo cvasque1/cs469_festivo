@@ -1,0 +1,58 @@
+.FestivalCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .FestivalCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+  .FestivalCard {
+    max-width: 225px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .FestivalImage {
+    height: 0;
+    padding-bottom: 60%;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .FestivalCardContent {
+    padding: 0.5rem;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  
+  .FestivalName {
+    font-weight: bold;
+  }
+  
+  .FestivalYear {
+    font-style: italic;
+  }
+
+  @media screen and (max-width: 992px) {
+    .FestivalCard {
+      max-width: 200px;
+      width: 100%;
+    }
+  }

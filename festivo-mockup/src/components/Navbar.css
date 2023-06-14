@@ -1,0 +1,41 @@
+.authenticatedNavbar {
+    max-width: 1000px;
+    width: 100%;
+}
+
+.Navigation {
+    padding: 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: content-box;
+    max-width: 1000px;
+    font-size: 20px;
+    line-height: 1.6;
+    font-family: Rubik, Roboto, sans-serif;
+}
+
+.Navigation__Link {
+    text-decoration: none;
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+    padding: 24px 1em;
+    transition-duration: .3s;
+    
+}
+
+a.Auth, button.Auth {
+    border: none;
+    color: black;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+header .Navigation .SignOut {
+    position: absolute;
+    visibility: hidden;
+    z-index: -1;
+    cursor: pointer;
+}

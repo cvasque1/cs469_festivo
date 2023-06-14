@@ -1,0 +1,178 @@
+.container {
+    height: 100%;
+    min-height: 100vh;
+}
+
+section.AppPage {
+    width: 100%;
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    background-color: #D9D9D9;
+    /* box-shadow: 10 0px 30px rgb(0 0 0 / 5%), -10 0px 30px rgb(0 0 0 / 5%); */
+    /* background-color: #f9f9f910; */
+}
+
+.AppPageContent {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EBEBEB;
+    /* border: 3px solid red; */
+    box-shadow: 10px 0px 10px -10px rgb(0 0 0 / 5%), -10px 0px 10px -10px rgb(0 0 0 / 5%);
+}
+
+/* .AppPageContentImage {
+    height: 334px;
+    width: 100%;
+    position: relative;
+} */
+header .Navigation {
+    padding: 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: content-box;
+    max-width: 1000px;
+    transition: padding .3s;
+}
+
+.Navigation__Link {
+    text-decoration: none;
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+    padding: 24px 1em;
+    color: #f9f9f9;
+    margin: 0 20px;
+    font-size: 20px;
+    line-height: 1.6;
+    cursor: pointer;
+}
+
+
+header .Navigation .SignOut {
+    position: absolute;
+    visibility: hidden;
+    z-index: -1;
+}
+
+.AppPageContentDisplay p {
+    font-weight: 600;
+}
+
+.AppPageContentDisplay__Title {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.AppPageContentDisplay__Title > * {
+    margin: 0;
+}
+
+.AppPageContentDisplay__Title p {
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+.AppPageContentDisplay__Title p:first-child {
+    align-self: flex-start;
+    position: absolute;
+    padding-left: 15px;;
+}
+
+.AppPageContentDisplay__Title p:last-child {
+    align-self: end;
+    position: absolute;
+    margin-top: 95px;;
+    padding-right: 15px;;
+}
+
+.AppPageContentDisplay__Title h1 {
+    font-size: 3em;
+    margin-top: 15px;
+}
+
+.AppPageContentDisplay, .AppPageContentPlaylist {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.AppPageContentDisplay__Form {
+    margin-top: 80px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.AppPageContentDisplayArtists {
+    max-width: 1200px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.LoadingSymbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px; /* Adjust the height as needed */
+  }
+  
+.LoadingText {
+    font-size: 24px;
+    color: #333; 
+}
+  
+
+@keyframes dots {
+    25% {
+      content: "Creating your curated artist selection.";
+    }
+    50% {
+      content: "Creating your curated artist selection..";
+    }
+    75% {
+      content: "Creating your curated artist selection...";
+    }
+}
+
+.LoadingText::after {
+    content: "Creating your curated artist selection";
+    animation: dots 2.5s infinite;
+}
+
+
+.AllArtists {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+}
+
+.PlaylistGenerator__Button {
+    background-color: #832232;
+    color: #fff;
+    border: none;
+    padding: 16px 32px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }

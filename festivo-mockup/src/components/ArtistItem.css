@@ -1,0 +1,69 @@
+.AllArtists {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .ArtistItem {
+    max-width: 225px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin: 0.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition-duration: .5s;
+  }
+  
+  .ArtistImage {
+    width: 100%;
+    padding-bottom: 80%;
+    background-size: cover;
+    background-position: center;
+}
+  
+  .ArtistItemBlock {
+    /* padding: 0.5rem; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .ArtistNameContainer {
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 0.5rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.ArtistName {
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.15s;
+    font-size: 1em;
+}
+  
+  @media screen and (max-width: 992px) {
+    .ArtistItem {
+      max-width: 200px;
+      width: 100%;
+    }
+  }
+  

@@ -1,0 +1,54 @@
+# .gitignore
+
+# Python
+flask/__pycache__
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+build/
+dist/
+*.egg-info/
+*.egg
+*.so
+*.ipynb_checkpoints
+
+# Flask
+instance/
+.webassets-cache
+
+# React / Node.js
+react/node_modules/
+node_modules/
+react/build/
+build/
+/.pnp
+.pnp.js
+/public/
+
+# IDEs and text editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.toc
+*.bak
+*.swp
+*.bbl
+*.blg
+*.log
+*.out
+*.synctex.gz
+
+# OS Files
+.DS_Store
+Desktop.ini
+
+# other
+*.yaml
+.dockerignore
+.gcloudignore
